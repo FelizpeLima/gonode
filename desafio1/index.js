@@ -10,8 +10,8 @@ nunjucks.configure(path.resolve(__dirname, 'views'), {
   watch: true
 })
 
-app.set('view engine', 'njk')
 app.use(express.urlencoded({ extended: false }))
+app.set('view engine', 'njk')
 
 const checkAgeQueryParam = (req, res, next) => {
   const { age } = req.query
