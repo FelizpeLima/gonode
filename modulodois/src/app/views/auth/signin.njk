@@ -2,9 +2,10 @@
 
 {% block body %}
   <form action="/signin" method="POST">
-    <img src="/images/logo.svg" height="42"
+    <img src="/images/logo.svg" height="42">
 
-    <input type="text" name="name" placeholder="Nome completo">
+    {% include "_partials/flash.njk" %}
+
     <input type="email" name="email" placeholder="Seu e-mail">
     <input type="password" name="password" placeholder="Senha">
 
