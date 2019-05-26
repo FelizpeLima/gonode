@@ -91,6 +91,7 @@ body {
   font-size: 13px;
   color: #444;
   align-self: center;
+  object-fit: cover;
 }
 
 .auth-wrapper form label[for="provider"] input {
@@ -207,9 +208,10 @@ ul.providers {
 }
 
 .provider img {
-  width: 48px;
-  height: 48px;
+  width: 50px;
+  height: 50px;
   border-radius: 50%;
+  object-fit: cover;
 }
 
 .provider strong {
